@@ -139,7 +139,7 @@ STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-# DISABLE_COLLECTSTATIC = 1
+DISABLE_COLLECTSTATIC = 1
 
 CORS_ALLOWED_ORIGINS = config(
     "CORS_ALLOWED_ORIGINS", cast=lambda v: [s.strip() for s in v.split(",")]
